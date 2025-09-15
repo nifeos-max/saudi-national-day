@@ -14,14 +14,17 @@
       background:linear-gradient(180deg,#022010,#034a24);
       color:var(--light);
       font-family:"Noto Naskh Arabic","Amiri",Tahoma,Arial,sans-serif;
-      line-height:1.9
+      line-height:1.9;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
     }
-    header{text-align:center;padding:14px 10px;border-bottom:2px solid var(--dark)}
-    .flag{width:200px;display:block;margin:0 auto 12px auto}
+    header{text-align:center;padding:14px 10px;width:100%;border-bottom:2px solid var(--dark)}
+    .flag{width:180px;display:block;margin:0 auto 10px auto}
     h1{margin:0;font-size:26px}
     p.lead{margin:2px 0 0 0;color:#cfe9dc;font-size:13px}
-    .container{max-width:500px;margin:auto;padding:14px}
-    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    .container{width:100%;max-width:420px;margin:auto;padding:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:14px}
     .card{
       background:var(--card);
       border:1px solid var(--edge);
@@ -42,7 +45,7 @@
     .title{font-size:18px;margin:6px 0 4px 0}
     .meta{font-size:12px;color:#cfe9dc;margin-bottom:6px}
     .story{white-space:pre-line;text-align:justify;font-size:14px}
-    footer{margin-top:20px;text-align:center;font-size:11px;color:#cbead9}
+    footer{margin:20px 0 10px;text-align:center;font-size:11px;color:#cbead9}
   </style>
 </head>
 <body>
@@ -144,3 +147,4 @@
   </footer>
 </body>
 </html>
+
