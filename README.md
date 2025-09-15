@@ -21,7 +21,7 @@
   .grid{display:grid;grid-template-columns:1fr;gap:16px}
   .card{
     background:var(--card);border:1px solid var(--edge);border-radius:12px;
-    padding:14px;transition:.2s;display:flex;flex-direction:column;gap:8px
+    padding:14px;transition:.2s;display:flex;flex-direction:column;gap:8px;cursor:pointer
   }
   .card:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(0,0,0,.3)}
   .pill{
@@ -39,6 +39,15 @@
   .meta{font-size:12px;color:#cfe9dc;margin-top:2px}
   .story{white-space:pre-line;text-align:justify;font-size:14px;margin-top:4px}
   footer{margin:20px 0 10px;text-align:center;font-size:11px;color:#cbead9}
+
+  /* نافذة الصورة */
+  .modal{
+    display:none;position:fixed;z-index:999;left:0;top:0;width:100%;height:100%;
+    background:rgba(0,0,0,0.85);align-items:center;justify-content:center;
+  }
+  .modal img{
+    max-width:90%;max-height:80%;border-radius:12px;box-shadow:0 0 15px #000
+  }
 </style>
 </head>
 <body>
@@ -52,7 +61,7 @@
 <div class="container">
   <div class="grid">
 
-    <div class="card">
+    <div class="card" data-img="salman.jpg">
       <span class="pill">خادم الحرمين</span>
       <div class="header">
         <img class="photo" src="salman.jpg" alt="الملك سلمان">
@@ -64,7 +73,7 @@
       <p class="story">قضى أكثر من 50 عامًا أميرًا للرياض ثم تولى الحكم عام 2015 وأطلق إصلاحات وتنمية شاملة ورعى توسعات الحرمين.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="ruwaili.jpg">
       <span class="pill">القيادة العسكرية</span>
       <div class="header">
         <img class="photo" src="ruwaili.jpg" alt="فياض الرويلي">
@@ -76,7 +85,7 @@
       <p class="story">طيار مقاتل سابق يشغل منصب رئيس الأركان منذ 2018 وقاد تطوير قدرات الجيش السعودي.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="mbs.jpg">
       <span class="pill">ولي العهد</span>
       <div class="header">
         <img class="photo" src="mbs.jpg" alt="محمد بن سلمان">
@@ -88,7 +97,7 @@
       <p class="story">أطلق رؤية 2030 ومشروعات كبرى مثل نيوم وقاد إصلاحات اقتصادية واجتماعية كبرى.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="rabiah.jpg">
       <span class="pill">الطب الإنساني</span>
       <div class="header">
         <img class="photo" src="rabiah.jpg" alt="عبدالله الربيعة">
@@ -100,7 +109,7 @@
       <p class="story">قاد أكثر من 50 عملية فصل توائم ناجحة وجعل المملكة مركزًا عالميًا، ويشرف على مركز الملك سلمان للإغاثة.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="jubair.jpg">
       <span class="pill">الدبلوماسية</span>
       <div class="header">
         <img class="photo" src="jubair.jpg" alt="عادل الجبير">
@@ -112,7 +121,7 @@
       <p class="story">شغل مناصب بارزة منها سفير في واشنطن ووزير الخارجية ودافع عن مواقف المملكة عالميًا.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="qasibi.jpg">
       <span class="pill">الأدب والإدارة</span>
       <div class="header">
         <img class="photo" src="qasibi.jpg" alt="غازي القصيبي">
@@ -124,7 +133,7 @@
       <p class="story">جمع بين الأدب والسياسة وتولى وزارات وسفارات وترك إرثًا أدبيًا وإداريًا بارزًا.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="iffat.jpg">
       <span class="pill">التعليم النسائي</span>
       <div class="header">
         <img class="photo" src="iffat.jpg" alt="الأميرة عفت">
@@ -136,7 +145,7 @@
       <p class="story">زوجة الملك فيصل وأول من أسس مدارس للبنات، دعمت تعليم المرأة وفتحت آفاقًا جديدة للفتيات.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="maher.jpg">
       <span class="pill">البطولة المدنية</span>
       <div class="header">
         <img class="photo" src="maher.jpg" alt="ماهر العتيبي">
@@ -148,7 +157,7 @@
       <p class="story">قاد شاحنة مشتعلة بعيدًا عن محطة وقود وأنقذ عشرات الأرواح رغم إصابته الخطيرة.</p>
     </div>
 
-    <div class="card">
+    <div class="card" data-img="majed.jpg">
       <span class="pill">الرياضة</span>
       <div class="header">
         <img class="photo" src="majed.jpg" alt="ماجد عبدالله">
@@ -164,6 +173,24 @@
 </div>
 
 <footer>© إعداد وطني تعليمي — شخصيات سعودية بارزة</footer>
+
+<!-- نافذة الصورة المنبثقة -->
+<div id="modal" class="modal" onclick="this.style.display='none'">
+  <img id="modalImg" src="">
+</div>
+
+<script>
+  const cards = document.querySelectorAll('.card');
+  const modal = document.getElementById('modal');
+  const modalImg = document.getElementById('modalImg');
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      modalImg.src = card.dataset.img;
+      modal.style.display = 'flex';
+    });
+  });
+</script>
 
 </body>
 </html>
