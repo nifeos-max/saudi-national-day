@@ -9,28 +9,40 @@
       --green:#006c35; --dark:#034a24; --light:#f5fff9; --card:#07391c; --edge:#0e3b22;
     }
     *{box-sizing:border-box}
-    body{margin:0;padding:0;background:linear-gradient(180deg,#022010,#034a24);
-      color:var(--light);font-family:"Noto Naskh Arabic","Amiri",Tahoma,Arial,sans-serif;line-height:1.9}
-    header{text-align:center;padding:16px 10px;border-bottom:2px solid var(--dark)}
-    .flag{width:260px;display:block;margin:0 auto 14px auto}
-    h1{margin:0;font-size:32px}
-    p.lead{margin:4px 0 0 0;color:#cfe9dc}
-    .container{max-width:1200px;margin:auto;padding:20px}
-    .grid{
-      display:grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap:20px;
+    body{
+      margin:0;padding:0;
+      background:linear-gradient(180deg,#022010,#034a24);
+      color:var(--light);
+      font-family:"Noto Naskh Arabic","Amiri",Tahoma,Arial,sans-serif;
+      line-height:1.9
     }
-    @media(max-width:900px){.grid{grid-template-columns: repeat(2, 1fr);}}
-    @media(max-width:600px){.grid{grid-template-columns: 1fr;}}
-    .card{background:var(--card);border:1px solid var(--edge);border-radius:12px;padding:16px;transition:.2s}
-    .card:hover{transform:translateY(-3px);box-shadow:0 8px 25px rgba(0,0,0,.3)}
-    .pill{display:inline-block;background:#0c3b23;color:#c6f5df;border:1px solid #135b36;
-      border-radius:999px;padding:2px 8px;font-size:12px}
-    .title{font-size:20px;margin:8px 0 4px 0}
-    .meta{font-size:13px;color:#cfe9dc;margin-bottom:8px}
+    header{text-align:center;padding:14px 10px;border-bottom:2px solid var(--dark)}
+    .flag{width:200px;display:block;margin:0 auto 12px auto}
+    h1{margin:0;font-size:26px}
+    p.lead{margin:2px 0 0 0;color:#cfe9dc;font-size:13px}
+    .container{max-width:500px;margin:auto;padding:14px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    .card{
+      background:var(--card);
+      border:1px solid var(--edge);
+      border-radius:12px;
+      padding:14px;
+      transition:.2s
+    }
+    .card:hover{transform:translateY(-2px);box-shadow:0 4px 15px rgba(0,0,0,.3)}
+    .pill{
+      display:inline-block;
+      background:#0c3b23;
+      color:#c6f5df;
+      border:1px solid #135b36;
+      border-radius:999px;
+      padding:2px 8px;
+      font-size:11px
+    }
+    .title{font-size:18px;margin:6px 0 4px 0}
+    .meta{font-size:12px;color:#cfe9dc;margin-bottom:6px}
     .story{white-space:pre-line;text-align:justify;font-size:14px}
-    footer{margin-top:28px;text-align:center;font-size:12px;color:#cbead9}
+    footer{margin-top:20px;text-align:center;font-size:11px;color:#cbead9}
   </style>
 </head>
 <body>
@@ -43,7 +55,6 @@
   <div class="container">
     <div class="grid">
 
-      <!-- الملك سلمان -->
       <div class="card">
         <span class="pill">خادم الحرمين</span>
         <h3 class="title">الملك سلمان بن عبدالعزيز</h3>
@@ -53,7 +64,6 @@
         </p>
       </div>
 
-      <!-- محمد بن سلمان -->
       <div class="card">
         <span class="pill">ولي العهد</span>
         <h3 class="title">محمد بن سلمان بن عبدالعزيز</h3>
@@ -63,7 +73,6 @@
         </p>
       </div>
 
-      <!-- الدكتور عبدالله الربيعة -->
       <div class="card">
         <span class="pill">الطب الإنساني</span>
         <h3 class="title">الدكتور عبدالله الربيعة</h3>
@@ -73,7 +82,6 @@
         </p>
       </div>
 
-      <!-- عادل الجبير -->
       <div class="card">
         <span class="pill">الدبلوماسية</span>
         <h3 class="title">عادل الجبير</h3>
@@ -83,7 +91,6 @@
         </p>
       </div>
 
-      <!-- غازي القصيبي -->
       <div class="card">
         <span class="pill">الأدب والإدارة</span>
         <h3 class="title">غازي القصيبي</h3>
@@ -93,7 +100,6 @@
         </p>
       </div>
 
-      <!-- الأميرة عفت -->
       <div class="card">
         <span class="pill">التعليم النسائي</span>
         <h3 class="title">الأميرة عفت الثنيان</h3>
@@ -103,7 +109,6 @@
         </p>
       </div>
 
-      <!-- ماهر العتيبي -->
       <div class="card">
         <span class="pill">البطولة المدنية</span>
         <h3 class="title">ماهر العتيبي</h3>
@@ -113,7 +118,6 @@
         </p>
       </div>
 
-      <!-- ماجد عبدالله -->
       <div class="card">
         <span class="pill">الرياضة</span>
         <h3 class="title">ماجد عبدالله</h3>
@@ -123,7 +127,6 @@
         </p>
       </div>
 
-      <!-- فياض بن حامد الرويلي -->
       <div class="card">
         <span class="pill">القيادة العسكرية</span>
         <h3 class="title">فياض بن حامد الرويلي</h3>
