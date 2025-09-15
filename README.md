@@ -55,7 +55,7 @@
     <div class="card">
       <span class="pill">خادم الحرمين</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4b/King_Salman_bin_Abdulaziz_Al_Saud_May_2023.jpg">
+        <img class="photo" src="salman.jpg" alt="الملك سلمان">
         <div class="nameblock">
           <h3 class="title">الملك سلمان بن عبدالعزيز</h3>
           <div class="meta">ملك الحزم والعزم</div>
@@ -65,9 +65,21 @@
     </div>
 
     <div class="card">
+      <span class="pill">القيادة العسكرية</span>
+      <div class="header">
+        <img class="photo" src="ruwaili.jpg" alt="فياض الرويلي">
+        <div class="nameblock">
+          <h3 class="title">فياض الرويلي</h3>
+          <div class="meta">رئيس الأركان</div>
+        </div>
+      </div>
+      <p class="story">طيار مقاتل سابق يشغل منصب رئيس الأركان منذ 2018 وقاد تطوير قدرات الجيش السعودي.</p>
+    </div>
+
+    <div class="card">
       <span class="pill">ولي العهد</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Mohammed_bin_Salman_2023_cropped.jpg">
+        <img class="photo" src="mbs.jpg" alt="محمد بن سلمان">
         <div class="nameblock">
           <h3 class="title">محمد بن سلمان</h3>
           <div class="meta">مهندس رؤية 2030</div>
@@ -79,7 +91,7 @@
     <div class="card">
       <span class="pill">الطب الإنساني</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Abdullah_Al_Rabeeah_2019.jpg">
+        <img class="photo" src="rabiah.jpg" alt="عبدالله الربيعة">
         <div class="nameblock">
           <h3 class="title">عبدالله الربيعة</h3>
           <div class="meta">رائد فصل التوائم</div>
@@ -91,7 +103,7 @@
     <div class="card">
       <span class="pill">الدبلوماسية</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Adel_al-Jubeir_2018.jpg">
+        <img class="photo" src="jubair.jpg" alt="عادل الجبير">
         <div class="nameblock">
           <h3 class="title">عادل الجبير</h3>
           <div class="meta">صوت المملكة دوليًا</div>
@@ -103,7 +115,7 @@
     <div class="card">
       <span class="pill">الأدب والإدارة</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/3/34/Ghazi_Algosaibi.jpg">
+        <img class="photo" src="qasibi.jpg" alt="غازي القصيبي">
         <div class="nameblock">
           <h3 class="title">غازي القصيبي</h3>
           <div class="meta">الأديب الوزير</div>
@@ -115,7 +127,7 @@
     <div class="card">
       <span class="pill">التعليم النسائي</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Iffat_Al_Thunayan.jpg">
+        <img class="photo" src="iffat.jpg" alt="الأميرة عفت">
         <div class="nameblock">
           <h3 class="title">الأميرة عفت</h3>
           <div class="meta">رائدة تعليم المرأة</div>
@@ -127,7 +139,7 @@
     <div class="card">
       <span class="pill">البطولة المدنية</span>
       <div class="header">
-        <img class="photo" src="https://al-marsd.com/wp-content/uploads/2024/08/maher.png">
+        <img class="photo" src="maher.jpg" alt="ماهر العتيبي">
         <div class="nameblock">
           <h3 class="title">ماهر العتيبي</h3>
           <div class="meta">أنقذ محطة وقود</div>
@@ -139,25 +151,13 @@
     <div class="card">
       <span class="pill">الرياضة</span>
       <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Majed_Abdullah_in_2012.jpg">
+        <img class="photo" src="majed.jpg" alt="ماجد عبدالله">
         <div class="nameblock">
           <h3 class="title">ماجد عبدالله</h3>
           <div class="meta">أسطورة الكرة السعودية</div>
         </div>
       </div>
       <p class="story">هداف السعودية التاريخي وقائد المنتخب والنصر وحقق بطولات آسيوية ومحلية عديدة.</p>
-    </div>
-
-    <div class="card">
-      <span class="pill">القيادة العسكرية</span>
-      <div class="header">
-        <img class="photo" src="https://upload.wikimedia.org/wikipedia/commons/4/47/Fayyad_Al-Ruwaili.jpg">
-        <div class="nameblock">
-          <h3 class="title">فياض الرويلي</h3>
-          <div class="meta">رئيس الأركان</div>
-        </div>
-      </div>
-      <p class="story">طيار مقاتل سابق يشغل منصب رئيس الأركان منذ 2018 وقاد تطوير قدرات الجيش السعودي.</p>
     </div>
 
   </div>
